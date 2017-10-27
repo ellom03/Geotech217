@@ -1,3 +1,3 @@
-# VorlageLaTex
-Vorlage für Zusammenfassungen in LaTex  
+# Geotechnik Zusammenfassung
+Aufbauend auf der Vorlesung HS17
 
