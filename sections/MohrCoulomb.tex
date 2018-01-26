@@ -1,0 +1,61 @@
+\section{Mohr-Coulomb-Bruchkriterium}
+	\begin{minipage}{\linewidth}
+	Verformung = $\Delta$V + $\Delta$Form \\
+	$\rightarrow$ bis Bruch linear Elastisch (Hook: $\sigma = \varepsilon \cdot E_{oed}$), danach Mohr-Coulomb \\
+	\qquad $\rightarrow$ $E_{oed} = M_E = \frac{4}{3} \cdot G + \kappa$ \\
+	\qquad $\rightarrow$ $E_{normal} = \frac{9 \cdot \kappa \cdot G}{3 \cdot \kappa + G}$
+
+
+
+\subsection{Volumetrische ($\Delta$V) Verformung}
+	\begin{align*}
+		p`				&= \frac{\sigma_1 + \sigma_2 + \sigma_3}{3}	 \\
+		\varepsilon_v	&= \frac{\Delta V}{V} = \varepsilon_1 + 2 \cdot \varepsilon_3 \\
+	\end{align*}
+	
+\subsection{Deviatorische ($\Delta$ Form aus Schub) Verformung}
+	\begin{align*}
+		q				&= \sqrt{\frac{(\sigma_1 - \sigma_2)^2 + (\sigma_1 - \sigma_3)^2 + (\sigma_2 - \sigma_3)^2}{2}} \\
+		\varepsilon_s	&= \frac{2}{3} \sqrt{\varepsilon_1^2 + \varepsilon_2^2 + \varepsilon_3^2 - (\varepsilon_1 \cdot \varepsilon_2 + \varepsilon_2 \cdot \varepsilon_3 + \varepsilon_1 \cdot \varepsilon_3)} \\
+	\end{align*}
+	
+	
+	
+\subsection{Oedometer}
+	\textbf{Visualisierung}
+	\begin{tabular}{ll}
+		$\Delta$Volumen		& $p= \frac{\sigma_1 + 2 \cdot \sigma_3}{3}$ \\
+							& $p`= p - u$ \\
+							& $\varepsilon_v= \frac{\varepsilon_1}{3}$ \\
+		Deviator ($\Delta$Form) &$q`= q = \sigma_1 - \sigma_3$ \\
+							& $\varepsilon_s= \frac{2}{3} \cdot \varepsilon_1$ \\
+	\end{tabular}
+	\end{minipage}
+
+
+\begin{minipage}{\linewidth}
+\subsection{Ebenerspannungsraum}
+
+\textbf{Tau-Sp-Diagramm}
+	\begin{align*}
+		\tau 		&= c`+ \sigma \cdot tan(\varphi) \\
+		\tau		&= b + s`\cdot tan(\beta) \\
+		\rightarrow c&= \frac{b`}{cos(\varphi)} \\
+		\rightarrow sin(\varphi) &= tan(\beta) \\
+	\end{align*}
+
+\subsection{Dreidimensional}
+
+\textbf{p-q-Diagramm} \\
+	\begin{align*}
+		q			&= \sigma = M \cdot p + d \\
+		M			&= \frac{3 \cdot sin(\varphi)}{\sqrt{3} \cdot cos(\Theta) - sin(\Theta) \cdot sin(\varphi)} \rightarrow \Theta = Theta =Winkel der Sp. welche Probe belastet\\
+	\end{align*}
+	
+	\subsubsection{Triaxversuch AK}
+	\begin{align*}
+		M			&= \frac{6 - sin(\varphi)}{3 - sin(\varphi)} \\
+		d			&= \frac{6 \cdot c`\cdot cos(\varphi)}{3 - sin(\varphi)} \\
+		\Theta		&= 30°
+	\end{align*}
+\end{minipage}
