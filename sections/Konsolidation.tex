@@ -46,10 +46,8 @@
 %		\[ \gamma_s=16-17 \hspace{2cm} \left[\frac{kN}{m^3}\right] \]
 %	\end{itemize}
 %\end{itemize}
-\begin{minipage}{\linewidth}
-
+	\begin{minipage}[t]{0.25\linewidth}
 	\subsection{Umrechnungen}
-
 	\begin{tabular}{|l|l|}
 	\hline
 	kPa 				& $\frac{kN}{m^2}$ \\ \hline
@@ -58,8 +56,8 @@
 	$\gamma_w=\frac{kN}{m^3}\cdot 10^{-6}$ & $\frac{kN}{cm^3}$ \\ \hline
 	$M_E=\frac{kN}{m^2}\cdot 10^{-4}$ & $\frac{kN}{cm^2}$	\\ \hline
 	\end{tabular}
-	
-	
+\end{minipage}
+\begin{minipage}[t]{0.5\linewidth}
 	\subsection{Materialverhalten mit Oedometer}
 
 	\begin{tabular}{l|l|l}
@@ -74,7 +72,7 @@
 	
 		$M_E$-Modul&$M_E=\frac{\Delta \sigma}{\Delta \epsilon}=\frac{1+e_0}{C_c \cdot 0.434}\cdot\sigma_m$&$\frac{kN}{m^2}$ \\	
 				&$\rightarrow \gamma_d=\frac{\gamma}{1+w}$	&$\frac{kN}{m^3}$ \\
-	\textbf{N?}	&$\rightarrow n=\frac{\gamma-\gamma_d}{S_r\cdot\gamma_w}$& \\
+				&$\rightarrow n=\frac{\gamma-\gamma_d}{S_r\cdot\gamma_w}$&  $_{Porosität}$ \\
 				&$\rightarrow e_0=\frac{n}{1-n}$			& \\
 				&$\rightarrow \gamma=\frac{G}{V}\cdot g$	& $\frac{kN}{m^3}$ \\
 				&$\rightarrow \gamma_s=$16-17				& $\frac{kN}{m^3}$ \\ \hline
@@ -85,11 +83,11 @@
 
 		Konsolidationskoeffizient&$C_v=\frac{M_E\cdot k}{\gamma_w}=\frac{T_v\cdot d^2}{t}$&$\frac{cm^2}{s}$ \\ \hline
 
-		Durchlässigkeitswert&$k=\frac{C_v\cdot\gamma_w}{M_E}$& \textbf{Einheit?} \\ \hline
+		Durchlässigkeitswert&$k=\frac{C_v\cdot\gamma_w}{M_E}$& $\frac{m}{s}$ \\ \hline
 		Zeitfaktor&$T_V=\frac{t\cdot C_V}{d^2}=\frac{t\cdot M_E\cdot k}{\gamma_w\cdot d^2}$& \\ \hline
 	
 		Kompressionsbeiwert&$C_c=\frac{e_2-e_3}{log\frac{\sigma_3}{\sigma_2}}=\frac{2,3\cdot(1+e_0)}{E}\cdot\sigma_{ref}$ &$\sigma_{ref}$ häufig 100kPa\\
-				&$C_c=0.009\cdot(w_L-10\%)$					& \textbf{Einheit?} \\ 
+				&$C_c=0.009\cdot(w_L-10\%)$					&  \\ 
 	
 		Schwellenbeiwert& C$_s$								& \\ \hline
 				&$OCR=\frac{\sigma_0}{\sigma_max}=\frac{Jetzige}{Max.}$ & \\ \hline
@@ -98,15 +96,16 @@
 	\end{tabular}
 	\\
 	\\
-	\textbf{Dehnungs-Spannungs-Diagramm; Spannungs-Porenziffer-Diagramm (mit Cc \& Cs); Merkmale ME, Verhalten} \\
-\end{minipage}
+%	\textbf{Dehnungs-Spannungs-Diagramm; Spannungs-Porenziffer-Diagramm (mit Cc \& Cs); Merkmale ME, Verhalten} \\
+	\end{minipage}
 
-\begin{minipage}{\linewidth}
+
+	\begin{minipage}{\linewidth}
 
 	\subsection{Eindimensionale Konsolidationstheorie}
 	
-	\textbf{Zeit-Tiefe-Konoslidationsgrad-Diagramm; Verhalten}\\
-	
+%\textbf{Zeit-Tiefe-Konoslidationsgrad-Diagramm; Verhalten}\\
+	\vspace*{5cm}	
 	\begin{tabular}{l|l|l}
 				& Formeln											& Einheiten \\ \hline \hline
 
@@ -129,6 +128,5 @@
 	(immer)		& $T_v=\frac{\frac{\pi}{4}\cdot (Um)^2}{\left[1-(Um)^{5.6}\right]^{0.357}}$ & \\	\hline	
 	\end{tabular}
 
-\textbf{Zeit-Setzungs-Diagramm}
-
-\end{minipage}
+% \textbf{Zeit-Setzungs-Diagramm}
+	\end{minipage}
