@@ -50,13 +50,18 @@
 
 %\begin{minipage}{\linewidth}
 %	\begin{figure}
-%		\includegraphics[width=3cm]{Abbildungen/Kons_1_Sp-Dehnungs-Diagramm}
+%		\includegraphics[width=3cm]{images/Kons_1_Sp-Dehnungs-Diagramm}
 %		\caption{}
 %		\label{fig:kons1sp-dehnungs-diagramm}
 %	\end{figure}
 %\end{minipage}
 
-\begin{minipage}[t]{0.25\linewidth}
+\begin{minipage}{\linewidth}
+	\includegraphics[width=0.4\linewidth]{images/Kons1SpDehnungsDiagramm} \qquad
+	\includegraphics[width=0.4\linewidth]{images/Kons2SPPorenDiagrammCcCs.PNG}
+\end{minipage}
+
+\begin{minipage}[t]{0.25\linewidth}	
 	\subsection{Umrechnungen}
 	\begin{tabular}{|l|l|}
 	\hline
@@ -91,7 +96,7 @@
 				&$\rightarrow M_E\neq E, \hspace{0.25cm}\text{da} \hspace{.25cm} \varepsilon_2=\epsilon_3=0$& \\
 				&$\sigma_m=\frac{2\cdot\sigma_0+\Delta \sigma}{2}$&$\frac{kN}{m^2}$ \\ \hline
 
-		Konsolidationskoeffizient&$C_v=\frac{M_E\cdot k}{\gamma_w}=\frac{T_v\cdot d^2}{t}$&$\frac{cm^2}{s}$ \\ \hline
+		Konsolidationskoeffizient&$C_v=\frac{M_E\cdot k}{\gamma_w}=\frac{T_v\cdot d^2}{t}$&$\frac{m^2}{s}$ \\ \hline
 
 		Durchlässigkeitswert&$k=\frac{C_v\cdot\gamma_w}{M_E}$& $\frac{m}{s}$ \\ \hline
 		Zeitfaktor&$T_V=\frac{t\cdot C_V}{d^2}=\frac{t\cdot M_E\cdot k}{\gamma_w\cdot d^2}$& \\ \hline
@@ -104,18 +109,17 @@
 		M$_{Platte}$ & $\frac{m\cdot (m^2-m-2)}{(m^2-1)\cdot (m-1)}$ & \\
 		$\rightarrow$ kleiner als M$_{E,Oed}$		& $m=\frac{1}{\nu}$							& $\nu=$Querdehnungszahl \\ \hline		
 	\end{tabular}
-	\\
-	\\
 %	\textbf{Dehnungs-Spannungs-Diagramm; Spannungs-Porenziffer-Diagramm (mit Cc \& Cs); Merkmale ME, Verhalten} \\
 	\end{minipage}
 
+\clearpage
 
 	\begin{minipage}{\linewidth}
 
 	\subsection{Eindimensionale Konsolidationstheorie}
 	
 %\textbf{Zeit-Tiefe-Konoslidationsgrad-Diagramm; Verhalten}\\
-	\vspace*{5cm}	
+		\includegraphics[width=0.7\linewidth]{images/Kons3PorenspTiefZeitSetzungsDiagramm.PNG} \\	
 	\begin{tabular}{l|l|l}
 				& Formeln											& Einheiten \\ \hline \hline
 
@@ -130,7 +134,7 @@
 	(je nach Um)& $T_v=\frac{\pi}{4}\cdot Um^2$ $\rightarrow Um<0.526$& (erwartete Zeit bis Um)\\
 				& $T_v=-0.933\cdot log(1-Um)-0.085$ $\rightarrow Um>0.526$& \\
 				& $T_v=\frac{c_v \cdot t}{d^2}$						& \\
-				& $t=\frac{T_v \cdot d^2}{c_v}$						& \textbf{Einheit?} \\
+				& $t=\frac{T_v \cdot d^2}{c_v}$						& s \\
 				& $c_v=\frac{k \cdot M_E}{\gamma_w} =\frac{T_v\cdot d^2}{t}$									&$\frac{cm^2}{s}$ \\
 				& $\rightarrow$ konst. bei U$_{90}$: $c_v=\frac{d^2 \cdot 0.848}{t_{90}}$& (T$_{v90}=0.848$)\\ \hline
 
@@ -138,5 +142,7 @@
 	(immer)		& $T_v=\frac{\frac{\pi}{4}\cdot (Um)^2}{\left[1-(Um)^{5.6}\right]^{0.357}}$ & \\	\hline	
 	\end{tabular}
 
+\vspace{\baselineskip}
+\includegraphics[width=0.6\linewidth]{images/Kons4ZeitSetzungsDiagramm.PNG}
 % \textbf{Zeit-Setzungs-Diagramm}
 	\end{minipage}
