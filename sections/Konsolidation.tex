@@ -67,6 +67,8 @@
 	\hline
 	kPa 				& $\frac{kN}{m^2}$ \\ \hline
 	Pa					& $\frac{N}{m^2}$  \\ \hline
+	kg					& 10 N				\\ \hline
+	$\frac{kN}{m^3}$	& $10 \cdot \frac{g}{cm^3}$ \\ \hline
 	$\frac{kN}{m^2}$	& $\frac{N}{mm}$	\\ \hline
 	$\gamma_w=\frac{kN}{m^3}\cdot 10^{-6}$ & $\frac{kN}{cm^3}$ \\ \hline
 	$M_E=\frac{kN}{m^2}\cdot 10^{-4}$ & $\frac{kN}{cm^2}$	\\ \hline
@@ -85,7 +87,7 @@
 				&$\rightarrow\frac{\Delta h}{h}=\frac{e_0 - e}{1+e_0}$&\\	
 				&$\rightarrow\Delta h=\frac{\Delta \sigma \cdot h_0}{M_E}$&m \\ \hline
 	
-		$M_E$-Modul&$M_E=\frac{\Delta \sigma}{\Delta \epsilon}=\frac{1+e_0}{C_c \cdot 0.434}\cdot\sigma_m$&$\frac{kN}{m^2}$ \\	
+		$M_E$-Modul&$M_E=\frac{\Delta \sigma}{\Delta \varepsilon}=\frac{1+e_0}{C_c \cdot 0.434}\cdot\sigma_m$&$\frac{kN}{m^2}$ \\	
 				&$\rightarrow \gamma_d=\frac{\gamma}{1+w}$	&$\frac{kN}{m^3}$ \\
 				&$\rightarrow n=\frac{\gamma-\gamma_d}{S_r\cdot\gamma_w}$&  $_{Porositaet}$ \\
 				&$\rightarrow e_0=\frac{n}{1-n}$			& \\
@@ -105,7 +107,7 @@
 				&$C_c=0.009\cdot(w_L-10\%)$					&  \\ 
 	
 		Schwellenbeiwert& C$_s$								& \\ \hline
-		Überkonsolidationsverhältnis		&$OCR=\frac{\sigma_0}{\sigma_max}=\frac{Jetzige}{Max.}$ & \\ \hline
+		Überkonsolidationsverhältnis		&$OCR=\frac{\sigma_0}{\sigma_{max}}=\frac{Jetzige}{Max.}$ & \\ \hline
 		M$_{Platte}$ & $\frac{m\cdot (m^2-m-2)}{(m^2-1)\cdot (m-1)}$ & \\
 		$\rightarrow$ kleiner als M$_{E,Oed}$		& $m=\frac{1}{\nu}$							& $\nu=$Querdehnungszahl \\ \hline		
 	\end{tabular}
@@ -123,10 +125,10 @@
 	\begin{tabular}{l|l|l}
 				& Formeln											& Einheiten \\ \hline \hline
 
-	Setzungen	& $\Delta\sigma=d^*\cdot \frac{\Delta \sigma}{M_E}$	& m \\
+	Setzungen	& $\Delta s=d^*\cdot \frac{\Delta \sigma}{M_E}$	& m \\
 				&													&($d^*=$Weg der Drainage insg. $\rightarrow$ h [m]) \\
 				&													&($\Delta\sigma=$Auflast q [kPa][kN/m$^2$]) \\
-	Endsetzungen& $\Delta\sigma_{inf}=h\cdot \frac{C_c}{1+e_0}\cdot log\left(\frac{\sigma(0)+\Delta\sigma}{\sigma(0)}\right)$	& m \\ \hline
+	Endsetzungen& $\Delta s_{inf}=h\cdot \frac{C_c}{1+e_0}\cdot log\left(\frac{\sigma(0)+\Delta\sigma}{\sigma(0)}\right)$	& m \\ \hline
 				
 	Konsolidationsgrad & $Um=\frac{\Delta s(t)}{\Delta s_{inf}} = \frac{s_1}{s_E}	$	& \% \\ \hline		
 
@@ -135,8 +137,9 @@
 				& $T_v=-0.933\cdot log(1-Um)-0.085$ $\rightarrow Um>0.526$& \\
 				& $T_v=\frac{c_v \cdot t}{d^2}$						& \\
 				& $t=\frac{T_v \cdot d^2}{c_v}$						& s \\
-				& $c_v=\frac{k \cdot M_E}{\gamma_w} =\frac{T_v\cdot d^2}{t}$									&$\frac{cm^2}{s}$ \\
-				& $\rightarrow$ konst. bei U$_{90}$: $c_v=\frac{d^2 \cdot 0.848}{t_{90}}$& (T$_{v90}=0.848$)\\ \hline
+				& $c_v=\frac{k \cdot M_E}{\gamma_w} =\frac{T_v\cdot d^2}{t}$									&$\frac{m^2}{s}$ (Tangente bei Primärsetzungen) \\
+				& $\rightarrow$ konst. bei U$_{90}$: $c_v=\frac{d^2 \cdot 0.848}{t_{90}}$& (T$_{v90}=0.848$)\\
+				& $c_{\alpha} = \frac{\Delta e}{log \left(\frac{t_2}{t_1}\right)}$ 				& $\frac{m^2}{s}$ (Tangente bei Kriechen)\\ \hline
 
 	Silvaram
 	(immer)		& $T_v=\frac{\frac{\pi}{4}\cdot (Um)^2}{\left[1-(Um)^{5.6}\right]^{0.357}}$ & \\	\hline	

@@ -47,26 +47,29 @@
 
 \clearpage
 
-
-
-\begin{minipage}{0.4\linewidth}
 \subsection{Ebenerspannungsraum}
+
+\begin{minipage}[t]{0.4\linewidth}
 %	\vspace{5cm}
 %\textbf{Tau-Sp-Diagramm}
 	\begin{align*}
 		\tau 		&= c`+ \sigma \cdot tan(\varphi) \\
 		\tau		&= b + s`\cdot tan(\beta) \\
-		\rightarrow c&= \frac{b`}{cos(\varphi)} \\
-		\rightarrow sin(\varphi) &= tan(\beta) \\
+		& \rightarrow \varphi = arctan \left(\frac{\Delta \tau}{\Delta \sigma}\right) \\
+		& \rightarrow c = \frac{b`}{cos(\varphi)} \\
+		& \rightarrow sin(\varphi) = tan(\beta) \\
 	\end{align*}
 \end{minipage}
-\begin{minipage}{0.5\linewidth}
+\begin{minipage}[t]{0.5\linewidth}
+%	\bigskip
+	\vspace{\baselineskip}
 	\includegraphics[width=\linewidth]{images/MC2Ebenerspraum.PNG}
 \end{minipage}
 
 
 
 	
+
 \begin{minipage}{0.6\linewidth}
 	\subsection{Dreidimensional}
 	\begin{align*}
@@ -76,6 +79,7 @@
 	\end{align*}
 \end{minipage}
 \begin{minipage}{0.4\linewidth}
+	\vspace{\baselineskip}
 \includegraphics[width=\linewidth]{images/MC33draum.PNG}
 \end{minipage}
 
@@ -104,3 +108,4 @@
 \begin{minipage}{\linewidth}
 	\includegraphics[width=0.8\linewidth]{images/MC4triax.PNG}
 \end{minipage}
+ \clearpage
